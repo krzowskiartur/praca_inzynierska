@@ -33,11 +33,6 @@ except FileNotFoundError:
 
 
 #pokazanie danych i czy ma braki
-
-print("\n" + "=" * 80)
-print(" Podstawowe rzeczy z danymi ")
-print("=" * 80)
-
 print(dane.head())
 print("\nTypy danych i brakujące wartości:")
 print(dane.info())
@@ -114,6 +109,7 @@ kolory_korelacji = ['#e74c3c' if x > 0 else '#2ecc71' for x in korelacje_do_wykr
 
 plt.barh(range(len(korelacje_do_wykresu)), korelacje_do_wykresu.values, color=kolory_korelacji, alpha=0.7)
 plt.yticks(range(len(korelacje_do_wykresu)), korelacje_do_wykresu.index)
+
 plt.xlabel('Współczynnik korelacji')
 plt.title('Top 10 cech skorelowanych ze śmiertelnością', fontsize=14, fontweight='bold')
 plt.axvline(x=0, color='black', linestyle='--', linewidth=0.8)
@@ -121,7 +117,7 @@ plt.grid(axis='x', alpha=0.3)
 
 plt.tight_layout()
 plt.savefig('../wyniki/02_korelacje_z_celem.png', dpi=300, bbox_inches='tight')
-print("\n✓ Wykres zapisany: 02_korelacje_z_celem.png")
+print("\nWykres zapisany: 02_korelacje_z_celem.png")
 plt.close()
 
 
