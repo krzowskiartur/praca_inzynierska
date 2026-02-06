@@ -23,7 +23,7 @@ np.random.seed(RANDOM_SEED)
 
 # przygotowanie danych*************************************************************************************************************************************************************************************************************
 dane = pd.read_csv('../dane/heart_failure_data.csv')
-print(f"✓ Wczytano dane {dane.shape[0]} pacjentów")
+print(f"Wczytano dane {dane.shape[0]} pacjentów")
 
 # podstawowe cechy
 cechy_bazowe = ['age', 'ejection_fraction', 'serum_creatinine']
@@ -172,7 +172,7 @@ f1_base = f1_score(y_test, y_pred_base)
 recall_base = recall_score(y_test, y_pred_base)
 precision_base = precision_score(y_test, y_pred_base)
 
-print(f"\n✓ Wyniki modelu bazowego:")
+print(f"\nWyniki modelu bazowego:")
 print(f"  F1-score:  {f1_base:.4f}")
 print(f"  Recall:    {recall_base:.4f}")
 print(f"  Precision: {precision_base:.4f}")
