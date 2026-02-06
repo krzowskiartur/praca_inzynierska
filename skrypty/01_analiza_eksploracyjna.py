@@ -174,13 +174,10 @@ for idx, cecha in enumerate(top_cechy):
 plt.suptitle('Porównanie kluczowych cech między grupami', fontsize=16, fontweight='bold', y=1.02)
 plt.tight_layout()
 plt.savefig('../wyniki/03_porownanie_grup.png', dpi=300, bbox_inches='tight')
-print("\n✓ Wykres zapisany: 03_porownanie_grup.png")
+print("\nWykres zapisany: 03_porownanie_grup.png")
 plt.close()
 
 # wartosci odstajace ******************************************************************************************************************************************************************************************
-print("\n" + "=" * 80)
-print("ANALIZA WARTOŚCI ODSTAJĄCYCH")
-print("=" * 80)
 
 print("\nLiczba wartości odstających (metoda IQR):")
 for cecha in top_cechy:
