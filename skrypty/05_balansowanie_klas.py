@@ -221,7 +221,6 @@ plt.suptitle('Porównanie macierzy pomyłek dla różnych metod balansowania',
              fontsize=14, fontweight='bold', y=1.02)
 plt.tight_layout()
 plt.savefig('../wyniki/10_macierze_pomylek_balansowanie.png', dpi=300, bbox_inches='tight')
-print("✓ Wykres zapisany: 10_macierze_pomylek_balansowanie.png")
 plt.close()
 
 
