@@ -22,10 +22,6 @@ sns.set_palette("Set2")
 os.makedirs('../wyniki', exist_ok=True)
 os.makedirs('../modele', exist_ok=True)
 
-print("=" * 80)
-print("MODEL BAZOWY: RANDOM FOREST")
-print("=" * 80)
-
 # seed dla powtarzalności wyników
 RANDOM_SEED = 42
 np.random.seed(RANDOM_SEED)
